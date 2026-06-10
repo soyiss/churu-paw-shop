@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원조회</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .page-header{
+            padding: 30px;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">홈</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="productregister.html">츄르등록</a>
+        </li>        
+        <li class="nav-item">
+            <a class="nav-link" href="inbound.html">입고등록</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="stocklist.html">재고현황</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="saleshistory.html">판매내역</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="memberlist.html">회원리스트</a>
+        </li>
+    </ul>
+
+    <div class="page-header">
+        <h2>👥 재고현황</h2>
+        <p class="text-muted">
+            현 재고 목록을 조회합니다. 
+        </p>
+    <div class="d-flex gap-4 mt-4 mb-4">
+        <div>📦 전체 상품 : <strong>10개</strong></div>
+        <div>🟢 충분 : <strong>5개</strong></div>
+        <div>🟡 부족 : <strong>3개</strong></div>
+        <div>🔴 품절 : <strong>2개</strong></div>
+    </div>
+
+    </div>
+
+    <div class="container-fluid">
+
+        <table class="table table-striped table-hover">
+
+            <thead>
+                <tr>
+                    <th scope="col">번호</th>
+                    <th scope="col">제품코드</th>
+                    <th scope="col">제품명</th>
+                    <th scope="col">맛</th>
+                    <th scope="col">가격</th>
+                    <th scope="col">재고수량 </th>
+                    <th scope="col">상태</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <th scope="row">1</th>
+                    <td>CH001</td>
+                    <td>냥냥 참치츄르</td>
+                    <td>참치</td>
+                    <td>3,000</td>
+                    <td>25</td>
+                    <td>🟢 충분</td>
+
+                </tr>
+
+                <tr>
+                    <th scope="row">2</th>
+                    <td>CH002</td>
+                    <td>냥냥 연어츄르</td>
+                    <td>연어</td>
+                    <td>4,000</td>
+                    <td>5</td>
+                    <td>🟡 부족</td>
+
+                </tr>
+
+                <tr>
+                    <th scope="row">3</th>
+                    <td>CH003</td>
+                    <td>냥냥 닭가슴살츄르</td>
+                    <td>닭가슴살</td>
+                    <td>3,000</td>
+                    <td>0</td>
+                    <td>🔴 품절</td>
+
+                </tr>
+
+                <tr>
+                    <th scope="row">4</th>
+                    <td>CH004</td>
+                    <td>냥냥 새우츄르</td>
+                    <td>새우</td>
+                    <td>3,000</td>
+                    <td>15</td>
+                    <td>🟢 충분</td>
+
+                </tr>
+
+                <tr>
+                    <th scope="row">5</th>
+                    <td>CH005</td>
+                    <td>냥냥 게살츄르</td>
+                    <td>게살</td>
+                    <td>4,000</td>
+                    <td>0</td>
+                    <td>🔴 품절</td>
+
+                </tr>
+                
+                <tr>
+                    <th scope="row">6</th>
+                    <td>CH006</td>
+                    <td>냥냥 치즈츄르</td>
+                    <td>치즈</td>
+                    <td>3,000</td>
+                    <td>20</td>
+                    <td>🟢 충분</td>
+
+                </tr>
+
+                <tr>
+                    <th scope="row">7</th>
+                    <td>CH007</td>
+                    <td>냥냥 가다랑어츄르</td>
+                    <td>가다랑어</td>
+                    <td>3,000</td>
+                    <td>3</td>
+                    <td>🟡 부족</td>
+
+                </tr>
+
+                <tr>
+                    <th scope="row">8</th>
+                    <td>CH008</td>
+                    <td>냥냥 소고기츄르</td>
+                    <td>소고기</td>
+                    <td>4,000</td>
+                    <td>4</td>
+                    <td>🟡 부족</td>
+
+                </tr>
+                
+                <tr>
+                    <th scope="row">9</th>
+                    <td>CH009</td>
+                    <td>냥냥 우유츄르</td>
+                    <td>우유</td>
+                    <td>3,000</td>
+                    <td>15</td>
+                    <td>🟢 충분</td>
+
+                </tr>
+
+                <tr>
+                    <th scope="row">10</th>
+                    <td>CH010</td>
+                    <td>냥냥 종합츄르</td>
+                    <td>참치, 연어</td>
+                    <td>4,000</td>
+                    <td>15</td>
+                    <td>🟢 충분</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</body>
+</html>

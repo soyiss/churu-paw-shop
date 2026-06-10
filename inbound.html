@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입고등록</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">홈</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="productregister.html">츄르등록</a>
+        </li>        
+        <li class="nav-item">
+            <a class="nav-link active" href="inbound.html">입고등록</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="stocklist.html">재고현황</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="saleshistory.html">판매내역</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="memberlist.html">회원리스트</a>
+        </li>
+    </ul>
+
+    <div class="container mt-4">
+
+        <!-- 제목 -->
+        <h2>📦 입고등록</h2>
+        <p class="text-muted">
+            창고로 들어온 츄르를 등록합니다.
+        </p>
+
+        <!-- 요약 카드 -->
+        <div class="row mb-4">
+
+            <div class="col-md-6">
+                <div class="card p-3 shadow-sm">
+                    <h5>📦 오늘 입고건수</h5>
+                    <h1 class="display-6 fw-bold text-primary">5건</h1>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-3 shadow-sm">
+                    <h5>📈 오늘 입고수량</h5>
+                    <h1 class="display-6 fw-bold text-success">120개</h1>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 입고 등록 -->
+        <div class="card p-4 mb-4 shadow-sm">
+
+            <div class="mb-3">
+                <label class="form-label">상품 선택</label>
+
+                <select class="form-select">
+                    <option selected>츄르를 선택하세요.</option>
+                    <option>냥냥 참치츄르</option>
+                    <option>냥냥 연어츄르</option>
+                    <option>냥냥 닭가슴살츄르</option>
+                    <option>냥냥 새우츄르</option>
+                    <option>냥냥 게살츄르</option>
+                    <option>냥냥 치즈츄르</option>
+                    <option>냥냥 가다랑어츄르</option>
+                    <option>냥냥 소고기츄르</option>
+                    <option>냥냥 우유츄르</option>
+                    <option>냥냥 종합츄르</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">입고수량</label>
+
+                <input
+                    type="number"
+                    class="form-control"
+                    placeholder="입고 수량 입력">
+            </div>
+
+            <button type="button" class="btn btn-success w-100">
+                입고등록
+            </button>
+
+        </div>
+
+        <!-- 최근 입고내역 -->
+        <div class="card p-4 shadow-sm">
+
+            <h4 class="fw-bold mb-3">
+                📋 최근 입고내역
+            </h4>
+
+            <table class="table table-striped table-hover table-bordered">
+
+                <thead class="table-light">
+                    <tr>
+                        <th>번호</th>
+                        <th>입고일시</th>
+                        <th>상품코드</th>
+                        <th>상품명</th>
+                        <th>입고수량</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>2026-06-09 09:15</td>
+                        <td>CH001</td>
+                        <td>냥냥 참치츄르</td>
+                        <td>20</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>2026-06-09 08:40</td>
+                        <td>CH002</td>
+                        <td>냥냥 연어츄르</td>
+                        <td>15</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>2026-06-08 17:20</td>
+                        <td>CH004</td>
+                        <td>냥냥 새우츄르</td>
+                        <td>30</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
